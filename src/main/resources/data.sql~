@@ -1,0 +1,17 @@
+DROP TABLE IF EXISTS todo;
+
+CREATE TABLE todo
+(
+    id          UUID PRIMARY KEY,
+    user_name   VARCHAR(255),
+    task        VARCHAR(255),
+    description TEXT,
+    local_date  DATE
+);
+
+INSERT INTO todo (id, user_name, task, description, local_date) VALUES
+                                                                    ('12345678-1234-5678-1234-567812345678', 'John Doe', 'Buy groceries', 'Milk, eggs, bread', '2024-12-02'),
+                                                                    ('87654321-8765-4321-8765-214587654321', 'Jane Smith', 'Finish project report', 'Complete chapter 3 and edit introduction', '2024-12-03'),
+                                                                    ('fedcba98-fedc-ba98-fedc-ba98fedcbafed', 'Bob Johnson', 'Learn Java programming', 'Focus on object-oriented design patterns', '2024-12-04'),
+                                                                    ('dcba9876-dcba-9867-bcad-9867dcabacdb', 'Alice Brown', 'Plan vacation', 'Research destinations in Europe', '2024-12-05'),
+                                                                    ('bacdef98-abcd-ef98-bacd-a98bacedfba', 'Mike Davis', 'Exercise routine', 'Start with cardio exercises three times a week', '2024-12-06')
